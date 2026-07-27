@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BOLD 60 · הסרטון שמוקרן לפני שהאירוע נגמר</title>
+<meta name="description" content="BOLD 60 — מצלמים בקבלת הפנים, עורכים בזמן האירוע, מקרינים על המסך המרכזי. סרטון Highlight מקצועי בפחות משעה.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;900&family=Heebo:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════════════════════
+   אותה פלטה של boldproduction.net:
+     סגול = טכנולוגיה/AI · כתום = תקשורת פנים־ארגונית · ציאן = brand film
+   המוצר הזה הוא אירוע פנים־ארגוני שרץ על מנוע הפקה מהיר —
+   ולכן הכתום מוביל, והסגול עונה.
+   ═══════════════════════════════════════════════════════════ */
+:root{
+  --bg:#080808;
+  --panel:#141414;
+  --panel-2:#1E1E20;
+  --line:#2A2A2E;
+  --purple:#a855f7;
+  --orange:#f97316;
+  --cyan:#22d3ee;
+  --white:#F5F5F4;
+  --grey:#9A9AA4;
+  --grey-2:#6A6A74;
+  --paper:#FFFFFF;
+  --ink:#0A0A0B;
+  --ink-2:#45454F;
+  --hair:rgba(10,10,11,.12);
+  --r:12px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  font-family:'Heebo',system-ui,sans-serif;background:var(--bg);color:var(--white);
+  line-height:1.7;font-weight:300;-webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,.rub{font-family:'Rubik',system-ui,sans-serif}
+.sheet{max-width:920px;margin:0 auto;background:var(--bg)}
+section{padding:80px 54px}
+p{font-size:1.02rem;max-width:60ch;color:var(--grey)}
+/* Heebo במשקל כבד נראה אופטית קטן יותר מ-300 באותו font-size, ו-Rubik קטן עוד יותר.
+   פיצוי אופטי כדי שמילה מודגשת תשב בדיוק בגובה הטקסט סביבה. */
+strong,b{font-family:inherit;font-size:1.04em;line-height:inherit}
+strong{color:var(--white);font-weight:500}
+.brand{font-size:1.08em}
+h2{
+  font-family:'Rubik';font-size:clamp(1.7rem,3.2vw,2.25rem);font-weight:700;
+  color:var(--white);line-height:1.2;letter-spacing:-.03em;margin-bottom:18px;max-width:22ch;
+}
+.eyebrow{font-size:.68rem;font-weight:600;letter-spacing:.22em;color:var(--orange);margin-bottom:14px}
+.eyebrow.cool{color:var(--purple)}
+
+/* ══ HERO ══ טיפוגרפי בלבד. הכותרת היא ההירו; המספרים נושאים את המשקל הויזואלי. */
+.hero{
+  position:relative;min-height:min(92vh,700px);background:var(--bg);
+  display:flex;align-items:center;overflow:hidden;
+}
+.hero-in{padding:54px;width:100%;position:relative;z-index:1}
+.hero::after{
+  content:"";position:absolute;z-index:0;pointer-events:none;
+  width:min(58vw,620px);aspect-ratio:1;left:-14%;bottom:-38%;
+  background:radial-gradient(circle,rgba(249,115,22,.18),transparent 62%);
+}
+.mark{font-family:'Rubik';font-size:1.5rem;font-weight:900;letter-spacing:.2em;color:var(--white)}
+.mark span{color:var(--orange)}
+.brand{font-family:Rubik;font-weight:900;letter-spacing:.08em;color:var(--white)}
+.brand span{color:var(--orange)}
+.hero h1{
+  font-size:clamp(2rem,4.5vw,3.35rem);font-weight:900;color:var(--white);
+  line-height:1.1;letter-spacing:-.045em;
+  margin:clamp(34px,6.5vh,58px) 0 24px;max-width:24ch;
+}
+.hero h1 i{
+  font-style:normal;color:var(--orange);
+  text-shadow:0 0 46px rgba(249,115,22,.5);
+}
+.hero .sub{color:var(--grey);font-size:1.06rem;font-weight:200;max-width:48ch;line-height:1.75}
+.since{
+  margin-top:clamp(38px,6.5vh,60px);padding-top:30px;
+  border-top:1px solid var(--line);
+  display:flex;gap:clamp(30px,5.5vw,68px);flex-wrap:wrap;
+}
+.since span{display:flex;flex-direction:column}
+.since b{
+  font-family:'Rubik';font-size:clamp(2rem,3.7vw,2.9rem);font-weight:700;
+  letter-spacing:-.04em;line-height:1;color:var(--white);
+}
+.since i{
+  font-style:normal;font-size:.78rem;font-weight:500;
+  letter-spacing:.09em;color:var(--grey);margin-top:9px;order:2;
+}
+.since span:nth-child(1) b{color:var(--orange)}
+.since span:nth-child(3) b{color:var(--purple)}
+
+/* ══ PAIN ══ */
+.pain{background:var(--paper);color:var(--ink)}
+.pain .big{font-family:'Rubik';font-size:clamp(1.5rem,3vw,2.05rem);font-weight:700;color:var(--ink);line-height:1.3;letter-spacing:-.03em;max-width:22ch}
+.pain .big .bad{color:var(--orange)}
+.pain .big em{font-style:normal;font-weight:300;color:var(--ink-2)}
+.pain ul{list-style:none;margin-top:42px;display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--hair)}
+.pain li{background:var(--paper);padding:24px 26px;font-size:.92rem;color:var(--ink-2)}
+.pain li b{display:block;font-family:'Rubik';font-size:1.9rem;font-weight:700;letter-spacing:-.03em;margin-bottom:5px;line-height:1;color:var(--orange)}
+
+/* ══ CONCEPT ══ */
+.concept .equation{
+  margin-top:28px;padding:28px;border-radius:var(--r);background:var(--panel);
+  border:1px solid var(--line);border-inline-start:3px solid var(--orange);
+  font-size:1.02rem;color:var(--grey);line-height:1.75;max-width:none;
+}
+.equation b{color:var(--white);font-weight:600}
+.host{
+  margin-top:10px;padding:24px 28px;border-radius:var(--r);
+  background:var(--panel-2);border:1px solid var(--line);
+}
+/* השם יושב בדיוק בגודל הטקסט של הגוף — הכותרת פה היא המשקל, לא הסקאלה */
+.host .name{font-family:'Rubik';font-size:1.02rem;font-weight:600;color:var(--white);letter-spacing:-.02em}
+.host .role{font-size:.78rem;letter-spacing:.14em;color:var(--orange);font-weight:600;margin-bottom:6px}
+.host p{font-size:1.02rem;margin-top:8px;max-width:none}
+
+/* ══ STEPS ══ ציר זמן: כל שלב נושא את השעה שלו */
+.steps{display:grid;gap:10px;margin-top:34px}
+.step{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--r);
+  padding:28px;position:relative;overflow:hidden;
+  transition:.35s cubic-bezier(.16,1,.3,1);
+}
+.step:hover{border-color:var(--orange);box-shadow:0 0 26px -8px var(--orange)}
+.step .t{
+  font-family:'Rubik';font-size:.72rem;font-weight:700;letter-spacing:.18em;
+  color:var(--orange);margin-bottom:10px;
+}
+.step:nth-child(2) .t{color:var(--purple)}
+.step:nth-child(3) .t{color:var(--cyan)}
+.step:hover{border-color:var(--line)}
+.step:nth-child(1):hover{border-color:rgba(249,115,22,.55)}
+.step:nth-child(2):hover{border-color:rgba(168,85,247,.55);box-shadow:0 0 26px -8px var(--purple)}
+.step:nth-child(3):hover{border-color:rgba(34,211,238,.55);box-shadow:0 0 26px -8px var(--cyan)}
+.step h3{font-family:'Rubik';font-size:1.2rem;font-weight:600;color:var(--white);letter-spacing:-.02em;margin-bottom:12px}
+.step ul{list-style:none;display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.step li{
+  border:1px solid var(--line);border-radius:999px;padding:6px 15px;
+  font-size:.83rem;color:var(--grey);
+}
+.step p{font-size:.92rem;max-width:none}
+.step .num{
+  position:absolute;left:22px;top:14px;font-family:'Rubik';font-weight:900;
+  font-size:4.2rem;line-height:1;color:rgba(245,245,244,.045);letter-spacing:-.05em;
+}
+
+/* ══ EXAMPLE ══ פריים אחד, במלוא הרוחב. זו ההוכחה — לא עוד איור. */
+.demo .card{
+  background:var(--panel);position:relative;aspect-ratio:16/9;overflow:hidden;cursor:pointer;
+  border-radius:var(--r);border:1px solid var(--line);padding:0;width:100%;display:block;
+  margin-top:34px;transition:.35s cubic-bezier(.16,1,.3,1);
+}
+.demo .card:hover,.demo .card:focus-visible{border-color:var(--orange);box-shadow:0 0 30px -6px var(--orange)}
+.demo .card img{width:100%;height:100%;object-fit:cover;display:block;transition:.5s cubic-bezier(.16,1,.3,1)}
+.demo .card:hover img,.demo .card:focus-visible img{transform:scale(1.04)}
+.demo .card .cap{
+  position:absolute;inset:auto 0 0 0;padding:44px 20px 16px;text-align:right;z-index:2;
+  background:linear-gradient(transparent,rgba(8,8,8,.95));
+  font-size:.86rem;line-height:1.4;color:var(--white);
+}
+.demo .card .play{
+  position:absolute;inset:0;margin:auto;width:64px;height:64px;z-index:2;
+  border-radius:50%;background:rgba(8,8,8,.55);border:1px solid rgba(245,245,244,.7);
+  display:flex;align-items:center;justify-content:center;transition:.35s cubic-bezier(.16,1,.3,1);
+}
+.demo .card:hover .play,.demo .card:focus-visible .play{background:var(--orange);border-color:var(--orange)}
+/* left/right פיזי, לא inline — משולש ניגון מצביע ימינה גם ב-RTL */
+.demo .card .play::after{
+  content:"";border-left:16px solid var(--white);
+  border-top:10px solid transparent;border-bottom:10px solid transparent;margin-left:5px;
+}
+.demo .card:focus-visible{outline:2px solid var(--orange);outline-offset:3px}
+
+/* LIGHTBOX */
+.lb{
+  position:fixed;inset:0;z-index:99;background:rgba(4,4,4,.94);
+  display:none;align-items:center;justify-content:center;padding:26px;
+}
+.lb.on{display:flex}
+.lb .frame{width:min(1100px,100%);aspect-ratio:16/9;background:#000;border-radius:var(--r);overflow:hidden}
+.lb iframe{width:100%;height:100%;border:0;display:block}
+.lb .x{
+  position:absolute;top:18px;left:22px;background:none;border:0;cursor:pointer;
+  font-family:'Rubik';font-size:2rem;line-height:1;color:var(--white);padding:8px;
+}
+.lb .x:hover{color:var(--orange)}
+
+/* ══ DELIVERABLES ══ */
+.deliver{background:var(--paper);color:var(--ink)}
+.deliver h2{color:var(--ink)}
+.deliver .eyebrow{color:#C2410C}
+.deliver p{color:var(--ink-2)}
+.deliver ul{list-style:none;margin-top:34px;display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--hair);border:1px solid var(--hair)}
+.deliver li{
+  background:var(--paper);padding:18px 22px;font-size:.94rem;color:var(--ink-2);
+  display:flex;gap:12px;align-items:baseline;
+}
+.deliver li::before{content:"✓";color:#15803D;font-weight:700;font-size:.95rem}
+.deliver li b{color:var(--ink);font-weight:600}
+.deliver .note{margin-top:26px;font-size:.95rem;color:var(--ink-2);max-width:52ch}
+.deliver .note b{color:var(--ink);font-weight:600}
+
+/* ══ BENEFITS: bento ══ */
+.bento{display:grid;gap:10px;margin-top:34px;grid-template-columns:1.55fr 1fr}
+.cell{border-radius:var(--r);padding:28px;border:1px solid var(--line);background:var(--panel);transition:.35s cubic-bezier(.16,1,.3,1)}
+.cell h3{font-family:'Rubik';font-size:1.2rem;font-weight:600;margin-bottom:10px;letter-spacing:-.02em;color:var(--white)}
+.cell p{font-size:.89rem;line-height:1.65;max-width:none;color:var(--grey)}
+.b1{grid-row:1 / span 2;display:flex;flex-direction:column;justify-content:flex-end;min-height:280px;border-color:rgba(249,115,22,.5)}
+.b1:hover{box-shadow:0 0 26px -6px var(--orange)}
+.b1 h3{color:var(--orange);font-size:1.45rem}
+.b2{border-color:rgba(168,85,247,.45)}
+.b2:hover{box-shadow:0 0 26px -6px var(--purple)}
+.b2 h3{color:var(--purple)}
+.b3{border-color:rgba(34,211,238,.45)}
+.b3:hover{box-shadow:0 0 26px -6px var(--cyan)}
+.b3 h3{color:var(--cyan)}
+.bento-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.b4{border-color:rgba(249,115,22,.35)}
+.b4 h3{color:var(--orange)}
+.b5{border-color:rgba(168,85,247,.35)}
+.b5 h3{color:var(--purple)}
+
+/* ══ UNIQUE ══ */
+.triple{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:34px}
+.tri{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--r);
+  padding:26px;text-align:center;
+}
+.tri b{display:block;font-family:'Rubik';font-size:1.05rem;font-weight:600;color:var(--white);margin-bottom:8px;letter-spacing:-.02em}
+.tri span{font-size:.86rem;color:var(--grey);line-height:1.6}
+.tri:nth-child(1){border-color:rgba(249,115,22,.4)}
+.tri:nth-child(2){border-color:rgba(168,85,247,.4)}
+.tri:nth-child(3){border-color:rgba(34,211,238,.4)}
+.punch{
+  margin-top:10px;padding:44px 30px;border-radius:var(--r);background:var(--panel-2);
+  border:1px solid var(--line);
+  font-family:'Rubik';font-size:clamp(1.2rem,2.4vw,1.5rem);font-weight:400;
+  color:var(--grey);text-align:center;line-height:1.5;max-width:none;
+}
+.punch b{color:var(--white);font-weight:700}
+.punch b.hi{color:var(--orange)}
+
+/* ══ CTA ══ */
+.cta{padding-bottom:64px}
+.cta h2{max-width:24ch}
+.cta .lines{margin-top:30px;display:flex;flex-direction:column;gap:2px}
+.cta a{
+  color:var(--white);text-decoration:none;font-family:'Rubik';font-weight:600;
+  font-size:1.15rem;letter-spacing:-.02em;padding:14px 0;
+  border-bottom:1px solid var(--line);transition:.25s;
+}
+.cta a:hover{color:var(--orange);border-color:var(--orange)}
+.sig{
+  padding:34px 54px 54px;font-family:'Rubik';font-size:.72rem;font-weight:700;
+  letter-spacing:.2em;color:var(--grey-2);
+}
+.sig b{color:var(--orange)}
+
+@media(max-width:720px){
+  section{padding:60px 26px}
+  .hero-in{padding:34px 26px}
+  .pain ul,.deliver ul{grid-template-columns:1fr}
+  .bento{grid-template-columns:1fr}
+  .b1{grid-row:auto;min-height:0}
+  .bento-row{grid-template-columns:1fr}
+  .triple{grid-template-columns:1fr}
+  .sig{padding:30px 26px 44px}
+}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+<!-- ═══ HERO ═══ -->
+<header class="hero">
+  <div class="hero-in">
+    <div class="mark">B<span>O</span>LD&#160;60</div>
+    <h1>האירוע עוד לא נגמר.<br>הסרטון כבר <i>על המסך</i>.</h1>
+    <p class="sub">מצלמים בקבלת הפנים. עורכים בזמן שהאירוע רץ. מקרינים על המסך המרכזי לפני שהערב הסתיים — והעובדים רואים את עצמם, בזמן שההתלהבות עוד בשיא.</p>
+    <div class="since">
+      <span><b>60</b><i>דקות מהכניסה למסך</i></span>
+      <span><b>2</b><i>דקות סרטון מוגמר</i></span>
+      <span><b>בערב אחד</b><i>הכל נסגר בתוכו</i></span>
+    </div>
+  </div>
+</header>
+
+<!-- ═══ PAIN ═══ -->
+<section class="pain">
+  <div class="big">בכל אירוע מצלמים.<br><em>הסרטון מגיע</em> <span class="bad">שבועיים אחרי</span><em>, כשכבר אף אחד לא זוכר.</em></div>
+  <ul>
+    <li><b>14 יום</b>הזמן הממוצע שעובר בין האירוע לבין הרגע שהעובדים מקבלים ממנו תוכן</li>
+    <li><b>אפס</b>ההשפעה של סרטון שמגיע אחרי שהאנרגיה של הערב כבר התפוגגה</li>
+    <li><b>בערב האירוע</b>חלון ההזדמנויות האמיתי &#8212; הלילה שבו כולם באירוע, באותו מצב רוח</li>
+    <li><b>×3</b>פער השיתוף בין תוכן שמגיע באותו ערב לתוכן שמגיע שבועיים אחריו</li>
+  </ul>
+</section>
+
+<!-- ═══ CONCEPT ═══ -->
+<section class="concept">
+  <div class="eyebrow">הקונספט</div>
+  <h2>הסרטון הראשון של האירוע &#8212; מוקרן כבר בסופו</h2>
+  <p>במהלך קבלת הפנים, צוות <span class="brand">B<span>O</span>LD</span> מצלם ראיונות קצרים עם העובדים והאורחים, בהנחיית <strong>ארז קליימן</strong>. באווירה קלילה, הומוריסטית ולא מתוסרטת, ארז משוחח עם המשתתפים, מייצר רגעים אותנטיים, פאנצ&#39;ים מצחיקים ואינטראקציות טבעיות שהופכות את העובדים לכוכבי האירוע.</p>
+  <div class="equation">
+    בזמן שהאירוע ממשיך, <b>צוות העריכה של BOLD עובד במקביל</b> ומייצר סרטון מקצועי, קצבי ומלא אנרגיה. תוך <b>פחות משעה</b> הסרטון מוכן להקרנה על המסך המרכזי &#8212; באותו ערב, מול אותם אנשים שצולמו בו.
+  </div>
+  <div class="host">
+    <div class="role">מנחה</div>
+    <div class="name">ארז קליימן</div>
+    <p>יודע לאלתר רגעים מצחיקים מול המצלמה עם עובדים שהגיעו לאירוע. זה מה שמפריד בין תיעוד לבין תוכן ויראלי.</p>
+  </div>
+</section>
+
+<!-- ═══ STEPS ═══ -->
+<section class="how">
+  <div class="eyebrow cool">איך זה עובד</div>
+  <h2>שלושה שלבים. ערב אחד.</h2>
+  <div class="steps">
+    <div class="step">
+      <div class="num">01</div>
+      <div class="t">קבלת פנים</div>
+      <h3>עמדת צילום בכניסה</h3>
+      <p>ארז מקבל את העובדים בכניסה לאירוע ומראיין אותם קצר, בקצב של האירוע, בלי להפריע למהלך האירוע עצמו.</p>
+      <ul>
+        <li>עמדת צילום בכניסה</li>
+        <li>ראיונות קצרים</li>
+        <li>שאלות מפתיעות</li>
+        <li>פאנצ&#39;ים והומור</li>
+        <li>תגובות ספונטניות</li>
+      </ul>
+    </div>
+    <div class="step">
+      <div class="num">02</div>
+      <div class="t">עריכה בזמן אמת</div>
+      <h3>העורך עובד בזמן שהאירוע מתחיל</h3>
+      <p>ברגע שהאורחים נכנסים לאולם, החומר כבר על שולחן העריכה. אין המתנה, אין העברת קבצים למחרת.</p>
+      <ul>
+        <li>בחירת הרגעים הטובים</li>
+        <li>עריכה מקצועית</li>
+        <li>מוזיקה</li>
+        <li>גרפיקה ומיתוג החברה</li>
+        <li>כתוביות</li>
+        <li>קצב מהיר ודינמי</li>
+      </ul>
+    </div>
+    <div class="step">
+      <div class="num">03</div>
+      <div class="t">ההקרנה</div>
+      <h3>על המסך המרכזי, לפני שהערב נגמר</h3>
+      <p>לקראת סוף האירוע מוקרן סרטון מסכם שצולם ונערך כולו במהלך אותו ערב. הקהל רואה את עצמו על המסך, מגיב, צוחק ומוחא כפיים.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ EXAMPLE ═══ -->
+<section class="demo">
+  <div class="eyebrow">דוגמה</div>
+  <h2>ככה זה נראה על המסך</h2>
+  <p>סרטון שצולם בקבלת הפנים, נערך במהלך האירוע והוקרן באותו ערב.</p>
+  <button class="card" data-yt="MMda_g_-Zq0" aria-label="נגן את סרטון הדוגמה">
+    <img src="https://i.ytimg.com/vi/MMda_g_-Zq0/maxresdefault.jpg" alt="פריים מתוך סרטון הדוגמה של BOLD 60">
+    <span class="play" aria-hidden="true"></span>
+    <span class="cap">BOLD 60 · סרטון קבלת פנים &#8212; צולם, נערך והוקרן באותו ערב</span>
+  </button>
+</section>
+
+<!-- ═══ DELIVERABLES ═══ -->
+<section class="deliver">
+  <div class="eyebrow">מה הלקוח מקבל</div>
+  <h2>נכס דיגיטלי מוכן להפצה &#8212; באותו ערב</h2>
+  <ul>
+    <li><b>סרטון Highlight מקצועי</b> של קבלת הפנים</li>
+    <li>מוכן <b>כבר במהלך האירוע</b></li>
+    <li>הקרנה על המסכים באירוע</li>
+    <li>קובץ מוכן להפצה מיד בסיום</li>
+    <li>מתאים ל<b>וואטסאפ</b></li>
+    <li>מתאים ל<b>אינסטגרם</b></li>
+    <li>מתאים ל<b>לינקדאין</b></li>
+    <li>מתאים ל<b>פייסבוק</b></li>
+  </ul>
+  <p class="note">מחלקת <b>משאבי אנוש</b> יכולה להפיץ את הסרטון עוד באותו ערב &#8212; בזמן שהעובדים עדיין באירוע, ועדיין מדברים עליו.</p>
+</section>
+
+<!-- ═══ BENEFITS ═══ -->
+<section class="benefits">
+  <div class="eyebrow">היתרונות</div>
+  <h2>האירוע הופך מחוויה שצופים בה לחוויה שמשתתפים בה</h2>
+  <div class="bento">
+    <div class="cell b1">
+      <h3>העובדים הופכים לכוכבים</h3>
+      <p>לא מנכ&quot;ל על במה ולא סרט תדמית. האנשים שעל המסך הם האנשים שבאירוע &#8212; וזה משנה לגמרי איך מסתכלים על הערב.</p>
+    </div>
+    <div class="cell b2">
+      <h3>מעורבות גבוהה</h3>
+      <p>כולם מחכים לראות אם הם נכנסו לסרטון. זו ציפייה שמתחילה בכניסה ונמשכת עד ההקרנה.</p>
+    </div>
+    <div class="cell b3">
+      <h3>שיתוף אורגני</h3>
+      <p>עשרות ואף מאות עובדים משתפים את הסרטון באופן טבעי &#8212; בלי שאף אחד ביקש מהם.</p>
+    </div>
+  </div>
+  <div class="bento-row">
+    <div class="cell b4">
+      <h3>מיתוג מעסיק</h3>
+      <p>Employer Branding אמיתי: תוכן אותנטי שמציג תרבות ארגונית קיימת, לא סרט תדמית מבוים.</p>
+    </div>
+    <div class="cell b5">
+      <h3>אפקט ה&#8221;וואו&#8221;</h3>
+      <p>בזמן שכולם מצפים לקבל סרטון שבוע אחרי האירוע &#8212; הם כבר רואים אותו על המסך, לפני שהאירוע הסתיים.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ UNIQUE ═══ -->
+<section class="unique">
+  <div class="eyebrow cool">למה זה מוצר ייחודי</div>
+  <h2>כי הוא משלב שלושה עולמות יחד</h2>
+  <div class="triple">
+    <div class="tri"><b>מנחה מקצועי</b><span>שיודע לייצר רגעים מצחיקים מול מצלמה, בלי תסריט</span></div>
+    <div class="tri"><b>הפקת תוכן בזמן אמת</b><span>צוות שעובד בתוך האירוע, לא אחריו</span></div>
+    <div class="tri"><b>עריכה ברמת Broadcast</b><span>מהירה &#8212; ובלי להתפשר על האיכות</span></div>
+  </div>
+  <div class="punch">
+    התוצאה היא מוצר שאינו רק <b>תיעוד של האירוע</b>,<br>אלא <b class="hi">חוויה שמתרחשת בתוך האירוע עצמו</b>.
+  </div>
+</section>
+
+<!-- ═══ CTA ═══ -->
+<section class="cta">
+  <div class="eyebrow">הצעד הבא</div>
+  <h2>ספרו לנו על האירוע הקרוב שלכם</h2>
+  <p>תאריך, כמות משתתפים, אולם &#8212; ונחזור אליכם עם הצעה מותאמת.</p>
+  <div class="lines">
+    <a href="https://boldproduction.net" target="_blank" rel="noopener">boldproduction.net</a>
+  </div>
+</section>
+
+<div class="sig">B<b>O</b>LD 60 · CONTENT PRODUCTION HOUSE</div>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="נגן וידאו">
+  <button class="x" id="lbx" aria-label="סגור">&#215;</button>
+  <div class="frame" id="lbf"></div>
+</div>
+
+<script>
+(function(){
+  var lb=document.getElementById('lb'),lbf=document.getElementById('lbf'),last=null;
+  function open(id,btn){
+    last=btn;
+    lbf.innerHTML='<iframe src="https://www.youtube.com/embed/'+id+'?autoplay=1&rel=0" '+
+      'title="סרטון דוגמה" allow="accelerometer;autoplay;encrypted-media;picture-in-picture" allowfullscreen></iframe>';
+    lb.classList.add('on');document.body.style.overflow='hidden';
+    document.getElementById('lbx').focus();
+  }
+  function close(){
+    lb.classList.remove('on');lbf.innerHTML='';document.body.style.overflow='';
+    if(last)last.focus();
+  }
+  document.querySelectorAll('[data-yt]').forEach(function(b){
+    b.addEventListener('click',function(){open(b.dataset.yt,b)});
+  });
+  document.getElementById('lbx').addEventListener('click',close);
+  lb.addEventListener('click',function(e){if(e.target===lb)close()});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&lb.classList.contains('on'))close()});
+})();
+</script>
+</body>
+</html>
