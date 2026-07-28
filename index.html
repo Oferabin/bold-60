@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BOLD 60 · הסרטון שמוקרן לפני שהאירוע נגמר</title>
-<meta name="description" content="BOLD 60 — מצלמים בקבלת הפנים, עורכים בזמן האירוע, מקרינים על המסך המרכזי. סרטון Highlight מקצועי בפחות משעה.">
+<title>BOLD 60&#8242; · הסרטון שמוקרן לפני שהאירוע נגמר</title>
+<meta name="description" content="BOLD 60&#8242; — מצלמים בקבלת הפנים, עורכים בזמן האירוע, מקרינים על המסך המרכזי. סרטון Highlight מקצועי בפחות משעה.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;900&family=Heebo:wght@200;300;400;500&display=swap" rel="stylesheet">
@@ -67,6 +67,9 @@ h2{
 }
 .mark{font-family:'Rubik';font-size:1.5rem;font-weight:900;letter-spacing:.2em;color:var(--white)}
 .mark span{color:var(--orange)}
+/* גרש הדקות מודבק ל-60: ה-letter-spacing של הלוגו פותח לפניו רווח שלא אמור להיות שם.
+   margin-left פיזי (לא inline) — הרווח נוסף מימין ל-0 בתוך רצף LTR. */
+.mark i{font-style:normal;margin-left:-.2em;color:var(--orange)}
 .brand{font-family:Rubik;font-weight:900;letter-spacing:.08em;color:var(--white)}
 .brand span{color:var(--orange)}
 .hero h1{
@@ -281,7 +284,7 @@ h2{
 <!-- ═══ HERO ═══ -->
 <header class="hero">
   <div class="hero-in">
-    <div class="mark">B<span>O</span>LD&#160;60</div>
+    <div class="mark"><bdi>B<span>O</span>LD&#160;60<i>&#8242;</i></bdi></div>
     <h1>האירוע עוד לא נגמר.<br>הסרטון כבר <i>על המסך</i>.</h1>
     <p class="sub">מצלמים בקבלת הפנים. עורכים בזמן שהאירוע רץ. מקרינים על המסך המרכזי לפני שהערב הסתיים — והעובדים רואים את עצמם, בזמן שההתלהבות עוד בשיא.</p>
     <div class="since">
@@ -365,9 +368,9 @@ h2{
   <h2>ככה זה נראה על המסך</h2>
   <p>סרטון שצולם בקבלת הפנים, נערך במהלך האירוע והוקרן באותו ערב.</p>
   <button class="card" data-yt="MMda_g_-Zq0" aria-label="נגן את סרטון הדוגמה">
-    <img src="https://i.ytimg.com/vi/MMda_g_-Zq0/maxresdefault.jpg" alt="פריים מתוך סרטון הדוגמה של BOLD 60">
+    <img src="https://i.ytimg.com/vi/MMda_g_-Zq0/maxresdefault.jpg" alt="פריים מתוך סרטון הדוגמה של BOLD 60&#8242;">
     <span class="play" aria-hidden="true"></span>
-    <span class="cap">BOLD 60 · סרטון קבלת פנים &#8212; צולם, נערך והוקרן באותו ערב</span>
+    <span class="cap"><bdi>BOLD 60&#8242;</bdi> · סרטון קבלת פנים &#8212; צולם, נערך והוקרן באותו ערב</span>
   </button>
 </section>
 
@@ -442,7 +445,7 @@ h2{
   </div>
 </section>
 
-<div class="sig">B<b>O</b>LD 60 · CONTENT PRODUCTION HOUSE</div>
+<div class="sig">B<b>O</b>LD 60&#8242; · CONTENT PRODUCTION HOUSE</div>
 </div>
 
 <!-- LIGHTBOX -->
