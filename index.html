@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BOLD 60&#8242; · הסרטון שמוקרן לפני שהאירוע נגמר</title>
-<meta name="description" content="BOLD 60&#8242; — מצלמים בקבלת הפנים, עורכים בזמן האירוע, מקרינים על המסך המרכזי. סרטון Highlight מקצועי בפחות משעה.">
+<title>BOLD &#8242;60 · הסרטון שמוקרן לפני שהאירוע נגמר</title>
+<meta name="description" content="BOLD &#8242;60 — מצלמים בקבלת הפנים, עורכים בזמן האירוע, מקרינים על המסך המרכזי. סרטון Highlight מקצועי בפחות משעה.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;900&family=Heebo:wght@200;300;400;500&display=swap" rel="stylesheet">
@@ -26,10 +26,6 @@
   --white:#F5F5F4;
   --grey:#9A9AA4;
   --grey-2:#6A6A74;
-  --paper:#FFFFFF;
-  --ink:#0A0A0B;
-  --ink-2:#45454F;
-  --hair:rgba(10,10,11,.12);
   --r:12px;
 }
 *{margin:0;padding:0;box-sizing:border-box}
@@ -67,9 +63,9 @@ h2{
 }
 .mark{font-family:'Rubik';font-size:1.5rem;font-weight:900;letter-spacing:.2em;color:var(--white)}
 .mark span{color:var(--orange)}
-/* גרש הדקות מודבק ל-60: ה-letter-spacing של הלוגו פותח לפניו רווח שלא אמור להיות שם.
-   margin-left פיזי (לא inline) — הרווח נוסף מימין ל-0 בתוך רצף LTR. */
-.mark i{font-style:normal;margin-left:-.2em;color:var(--orange)}
+/* גרש הדקות יושב משמאל ל-60 ומודבק אליו: ה-letter-spacing של הלוגו פותח אחריו
+   רווח שלא אמור להיות שם. margin-right פיזי (לא inline) — הרווח נוסף מימין לגרש. */
+.mark i{font-style:normal;margin-right:-.2em;color:var(--orange)}
 .brand{font-family:Rubik;font-weight:900;letter-spacing:.08em;color:var(--white)}
 .brand span{color:var(--orange)}
 .hero h1{
@@ -99,15 +95,6 @@ h2{
 .since span:nth-child(1) b{color:var(--orange)}
 .since span:nth-child(3) b{color:var(--purple)}
 
-/* ══ PAIN ══ */
-.pain{background:var(--paper);color:var(--ink)}
-.pain .big{font-family:'Rubik';font-size:clamp(1.5rem,3vw,2.05rem);font-weight:700;color:var(--ink);line-height:1.3;letter-spacing:-.03em;max-width:22ch}
-.pain .big .bad{color:var(--orange)}
-.pain .big em{font-style:normal;font-weight:300;color:var(--ink-2)}
-.pain ul{list-style:none;margin-top:42px;display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--hair)}
-.pain li{background:var(--paper);padding:24px 26px;font-size:.92rem;color:var(--ink-2)}
-.pain li b{display:block;font-family:'Rubik';font-size:1.9rem;font-weight:700;letter-spacing:-.03em;margin-bottom:5px;line-height:1;color:var(--orange)}
-
 /* ══ CONCEPT ══ */
 .concept .equation{
   margin-top:28px;padding:28px;border-radius:var(--r);background:var(--panel);
@@ -115,15 +102,6 @@ h2{
   font-size:1.02rem;color:var(--grey);line-height:1.75;max-width:none;
 }
 .equation b{color:var(--white);font-weight:600}
-.host{
-  margin-top:10px;padding:24px 28px;border-radius:var(--r);
-  background:var(--panel-2);border:1px solid var(--line);
-}
-/* השם יושב בדיוק בגודל הטקסט של הגוף — הכותרת פה היא המשקל, לא הסקאלה */
-.host .name{font-family:'Rubik';font-size:1.02rem;font-weight:600;color:var(--white);letter-spacing:-.02em}
-.host .role{font-size:.78rem;letter-spacing:.14em;color:var(--orange);font-weight:600;margin-bottom:6px}
-.host p{font-size:1.02rem;margin-top:8px;max-width:none}
-
 /* ══ STEPS ══ ציר זמן: כל שלב נושא את השעה שלו */
 .steps{display:grid;gap:10px;margin-top:34px}
 .step{
@@ -154,61 +132,32 @@ h2{
   font-size:4.2rem;line-height:1;color:rgba(245,245,244,.045);letter-spacing:-.05em;
 }
 
-/* ══ EXAMPLE ══ פריים אחד, במלוא הרוחב. זו ההוכחה — לא עוד איור. */
-.demo .card{
-  background:var(--panel);position:relative;aspect-ratio:16/9;overflow:hidden;cursor:pointer;
-  border-radius:var(--r);border:1px solid var(--line);padding:0;width:100%;display:block;
-  margin-top:34px;transition:.35s cubic-bezier(.16,1,.3,1);
+/* ══ DELIVERABLES ══ הסקשן הזה היה לבן ושבר את הרצף. עכשיו הוא חי בשפה של
+   שאר המצגת: לוח כהה אחד, שורות מופרדות בקו שיער, אימוג'י בתא כתום משלו. */
+.deliver ul{
+  list-style:none;margin-top:30px;border:1px solid var(--line);
+  border-radius:var(--r);background:var(--panel);overflow:hidden;
 }
-.demo .card:hover,.demo .card:focus-visible{border-color:var(--orange);box-shadow:0 0 30px -6px var(--orange)}
-.demo .card img{width:100%;height:100%;object-fit:cover;display:block;transition:.5s cubic-bezier(.16,1,.3,1)}
-.demo .card:hover img,.demo .card:focus-visible img{transform:scale(1.04)}
-.demo .card .cap{
-  position:absolute;inset:auto 0 0 0;padding:44px 20px 16px;text-align:right;z-index:2;
-  background:linear-gradient(transparent,rgba(8,8,8,.95));
-  font-size:.86rem;line-height:1.4;color:var(--white);
-}
-.demo .card .play{
-  position:absolute;inset:0;margin:auto;width:64px;height:64px;z-index:2;
-  border-radius:50%;background:rgba(8,8,8,.55);border:1px solid rgba(245,245,244,.7);
-  display:flex;align-items:center;justify-content:center;transition:.35s cubic-bezier(.16,1,.3,1);
-}
-.demo .card:hover .play,.demo .card:focus-visible .play{background:var(--orange);border-color:var(--orange)}
-/* left/right פיזי, לא inline — משולש ניגון מצביע ימינה גם ב-RTL */
-.demo .card .play::after{
-  content:"";border-left:16px solid var(--white);
-  border-top:10px solid transparent;border-bottom:10px solid transparent;margin-left:5px;
-}
-.demo .card:focus-visible{outline:2px solid var(--orange);outline-offset:3px}
-
-/* LIGHTBOX */
-.lb{
-  position:fixed;inset:0;z-index:99;background:rgba(4,4,4,.94);
-  display:none;align-items:center;justify-content:center;padding:26px;
-}
-.lb.on{display:flex}
-.lb .frame{width:min(1100px,100%);aspect-ratio:16/9;background:#000;border-radius:var(--r);overflow:hidden}
-.lb iframe{width:100%;height:100%;border:0;display:block}
-.lb .x{
-  position:absolute;top:18px;left:22px;background:none;border:0;cursor:pointer;
-  font-family:'Rubik';font-size:2rem;line-height:1;color:var(--white);padding:8px;
-}
-.lb .x:hover{color:var(--orange)}
-
-/* ══ DELIVERABLES ══ */
-.deliver{background:var(--paper);color:var(--ink)}
-.deliver h2{color:var(--ink)}
-.deliver .eyebrow{color:#C2410C}
-.deliver p{color:var(--ink-2)}
-.deliver ul{list-style:none;margin-top:34px;display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--hair);border:1px solid var(--hair)}
 .deliver li{
-  background:var(--paper);padding:18px 22px;font-size:.94rem;color:var(--ink-2);
-  display:flex;gap:12px;align-items:baseline;
+  padding:20px 24px;font-size:1.02rem;color:var(--grey);line-height:1.6;
+  display:flex;gap:16px;align-items:center;
+  border-bottom:1px solid var(--line);transition:.3s cubic-bezier(.16,1,.3,1);
 }
-.deliver li::before{content:"✓";color:#15803D;font-weight:700;font-size:.95rem}
-.deliver li b{color:var(--ink);font-weight:600}
-.deliver .note{margin-top:26px;font-size:.95rem;color:var(--ink-2);max-width:52ch}
-.deliver .note b{color:var(--ink);font-weight:600}
+.deliver li:last-child{border-bottom:0}
+.deliver li:hover{background:var(--panel-2);color:var(--white)}
+/* האימוג'י בתא קבוע — כל שורות הטקסט מתחילות באותו קו אנכי */
+.deliver li i{
+  font-style:normal;font-size:1.1rem;line-height:1;flex-shrink:0;
+  width:42px;height:42px;border-radius:10px;
+  background:rgba(249,115,22,.1);border:1px solid rgba(249,115,22,.28);
+  display:flex;align-items:center;justify-content:center;
+}
+.deliver li b{color:var(--white);font-weight:600}
+.deliver .note{
+  margin-top:22px;font-size:.95rem;color:var(--grey);max-width:56ch;
+  border-inline-start:3px solid var(--orange);padding-inline-start:18px;
+}
+.deliver .note b{color:var(--white);font-weight:600}
 
 /* ══ BENEFITS: bento ══ */
 .bento{display:grid;gap:10px;margin-top:34px;grid-template-columns:1.55fr 1fr}
@@ -230,51 +179,75 @@ h2{
 .b5{border-color:rgba(168,85,247,.35)}
 .b5 h3{color:var(--purple)}
 
-/* ══ UNIQUE ══ */
-.triple{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:34px}
-.tri{
-  background:var(--panel);border:1px solid var(--line);border-radius:var(--r);
-  padding:26px;text-align:center;
-}
-.tri b{display:block;font-family:'Rubik';font-size:1.05rem;font-weight:600;color:var(--white);margin-bottom:8px;letter-spacing:-.02em}
-.tri span{font-size:.86rem;color:var(--grey);line-height:1.6}
-.tri:nth-child(1){border-color:rgba(249,115,22,.4)}
-.tri:nth-child(2){border-color:rgba(168,85,247,.4)}
-.tri:nth-child(3){border-color:rgba(34,211,238,.4)}
+/* ══ UNIQUE ══ המשפט עומד לבדו בסקשן, אז הוא מקבל את המשקל של כותרת. */
 .punch{
-  margin-top:10px;padding:44px 30px;border-radius:var(--r);background:var(--panel-2);
+  padding:64px 34px;border-radius:var(--r);background:var(--panel-2);
   border:1px solid var(--line);
-  font-family:'Rubik';font-size:clamp(1.2rem,2.4vw,1.5rem);font-weight:400;
-  color:var(--grey);text-align:center;line-height:1.5;max-width:none;
+  font-family:'Rubik';font-size:clamp(1.35rem,2.8vw,1.75rem);font-weight:400;
+  color:var(--grey);text-align:center;line-height:1.45;max-width:none;
 }
 .punch b{color:var(--white);font-weight:700}
 .punch b.hi{color:var(--orange)}
 
-/* ══ CTA ══ */
-.cta{padding-bottom:64px}
-.cta h2{max-width:24ch}
-.cta .lines{margin-top:30px;display:flex;flex-direction:column;gap:2px}
-.cta a{
-  color:var(--white);text-decoration:none;font-family:'Rubik';font-weight:600;
-  font-size:1.15rem;letter-spacing:-.02em;padding:14px 0;
-  border-bottom:1px solid var(--line);transition:.25s;
-}
-.cta a:hover{color:var(--orange);border-color:var(--orange)}
+/* המשפט הסוגר הוא הסקשן האחרון — החתימה מקבלת אוויר משלה מעליה. */
 .sig{
   padding:34px 54px 54px;font-family:'Rubik';font-size:.72rem;font-weight:700;
   letter-spacing:.2em;color:var(--grey-2);
 }
 .sig b{color:var(--orange)}
 
+/* ══ טאבלט ומטה ══ */
 @media(max-width:720px){
   section{padding:60px 26px}
   .hero-in{padding:34px 26px}
-  .pain ul,.deliver ul{grid-template-columns:1fr}
   .bento{grid-template-columns:1fr}
   .b1{grid-row:auto;min-height:0}
   .bento-row{grid-template-columns:1fr}
-  .triple{grid-template-columns:1fr}
   .sig{padding:30px 26px 44px}
+}
+
+/* ══ נייד ══
+   שלושת המספרים בהירו לא נכנסים בשורה אחת ברוחב טלפון — הכיתובים ארוכים מדי
+   והם נשברים באמצע. במקום זה הם הופכים לשלוש שורות: מספר מימין, כיתוב לצדו. */
+@media(max-width:560px){
+  section{padding:52px 20px}
+  .hero{min-height:auto;padding:70px 0 30px}
+  .hero-in{padding:0 20px}
+  .hero h1{font-size:clamp(1.85rem,8.5vw,2.4rem);margin:30px 0 20px}
+  .hero .sub{font-size:1rem}
+  .since{margin-top:34px;padding-top:24px;flex-direction:column;gap:18px}
+  .since span{flex-direction:row;align-items:baseline;gap:14px}
+  .since b{font-size:2.15rem;min-width:2.6ch}
+  .since i{order:0;margin-top:0;font-size:.82rem;letter-spacing:.04em}
+
+  h2{font-size:1.55rem;max-width:none}
+  .concept .equation{padding:22px;font-size:.98rem}
+  .step{padding:24px 22px}
+  .step .num{font-size:3rem;left:16px;top:12px}
+  .step h3{font-size:1.08rem}
+
+  .deliver li{padding:16px 16px;gap:13px;font-size:.97rem;align-items:flex-start}
+  .deliver li i{width:36px;height:36px;font-size:1rem;border-radius:9px}
+  .deliver .note{padding-inline-start:15px}
+
+  .cell{padding:24px 22px}
+  .b1 h3{font-size:1.3rem}
+
+  /* המשפט הסוגר: ה-<br> נועד לשתי שורות ארוכות. בטלפון הוא יוצר שורה יתומה,
+     אז הוא מנוטרל והטקסט נשבר לפי הרוחב האמיתי. */
+  .punch{padding:40px 22px;font-size:1.18rem;line-height:1.55}
+  .punch br{display:none}
+
+  .mark{font-size:1.3rem}
+  .sig{padding:26px 20px 40px;font-size:.66rem;letter-spacing:.16em}
+}
+
+/* ══ מסך מגע ══ אין hover אמיתי; בלי זה אפקט הריחוף "נתקע" אחרי נגיעה. */
+@media(hover:none){
+  .step:hover,.step:nth-child(1):hover,.step:nth-child(2):hover,.step:nth-child(3):hover,
+  .b1:hover,.b2:hover,.b3:hover,.cell:hover{box-shadow:none}
+  .deliver li:hover{background:var(--panel);color:var(--grey)}
+  .deliver li:hover b{color:var(--white)}
 }
 </style>
 </head>
@@ -284,40 +257,23 @@ h2{
 <!-- ═══ HERO ═══ -->
 <header class="hero">
   <div class="hero-in">
-    <div class="mark"><bdi>B<span>O</span>LD&#160;60<i>&#8242;</i></bdi></div>
+    <div class="mark"><bdi>B<span>O</span>LD&#160;<i>&#8242;</i>60</bdi></div>
     <h1>האירוע עוד לא נגמר.<br>הסרטון כבר <i>על המסך</i>.</h1>
-    <p class="sub">מצלמים בקבלת הפנים. עורכים בזמן שהאירוע רץ. מקרינים על המסך המרכזי לפני שהערב הסתיים — והעובדים רואים את עצמם, בזמן שההתלהבות עוד בשיא.</p>
+    <p class="sub">מצלמים בקבלת הפנים, עורכים בזמן האירוע, מקרינים על המסך הגדול לפני שהאירוע נגמר</p>
     <div class="since">
-      <span><b>60</b><i>דקות מהכניסה למסך</i></span>
-      <span><b>2</b><i>דקות סרטון מוגמר</i></span>
-      <span><b>בערב אחד</b><i>הכל נסגר בתוכו</i></span>
+      <span><b>60</b><i>דקות מתחילת האירוע</i></span>
+      <span><b>2</b><i>דקות סרטון ערוך</i></span>
+      <span><b>1</b><i>סרטון מפתיע לפני שהולכים</i></span>
     </div>
   </div>
 </header>
 
-<!-- ═══ PAIN ═══ -->
-<section class="pain">
-  <div class="big">בכל אירוע מצלמים.<br><em>הסרטון מגיע</em> <span class="bad">שבועיים אחרי</span><em>, כשכבר אף אחד לא זוכר.</em></div>
-  <ul>
-    <li><b>14 יום</b>הזמן הממוצע שעובר בין האירוע לבין הרגע שהעובדים מקבלים ממנו תוכן</li>
-    <li><b>אפס</b>ההשפעה של סרטון שמגיע אחרי שהאנרגיה של הערב כבר התפוגגה</li>
-    <li><b>בערב האירוע</b>חלון ההזדמנויות האמיתי &#8212; הלילה שבו כולם באירוע, באותו מצב רוח</li>
-    <li><b>×3</b>פער השיתוף בין תוכן שמגיע באותו ערב לתוכן שמגיע שבועיים אחריו</li>
-  </ul>
-</section>
-
 <!-- ═══ CONCEPT ═══ -->
 <section class="concept">
   <div class="eyebrow">הקונספט</div>
-  <h2>הסרטון הראשון של האירוע &#8212; מוקרן כבר בסופו</h2>
-  <p>במהלך קבלת הפנים, צוות <span class="brand">B<span>O</span>LD</span> מצלם ראיונות קצרים עם העובדים והאורחים, בהנחיית <strong>ארז קליימן</strong>. באווירה קלילה, הומוריסטית ולא מתוסרטת, ארז משוחח עם המשתתפים, מייצר רגעים אותנטיים, פאנצ&#39;ים מצחיקים ואינטראקציות טבעיות שהופכות את העובדים לכוכבי האירוע.</p>
+  <p>במהלך קבלת הפנים, צוות <span class="brand">B<span>O</span>LD</span> מצלם ראיונות קצרצרים עם העובדים והאורחים שמגיעים לאירוע. הסטנדאפיסט ושדר הרדיו <strong>ארז קליימן</strong> יפגוש את האנשים בתחילת הערב, ישאל שאלות קלילות, ייצר רגעים משעשעים ואותנטיים, תוך כדי אינטראקציה טבעית וזורמת ובשילוב פאנצ&#39;ים ואווירה משעשעת &#8212; מה שישים את העובדים במרכז האירוע.</p>
   <div class="equation">
-    בזמן שהאירוע ממשיך, <b>צוות העריכה של BOLD עובד במקביל</b> ומייצר סרטון מקצועי, קצבי ומלא אנרגיה. תוך <b>פחות משעה</b> הסרטון מוכן להקרנה על המסך המרכזי &#8212; באותו ערב, מול אותם אנשים שצולמו בו.
-  </div>
-  <div class="host">
-    <div class="role">מנחה</div>
-    <div class="name">ארז קליימן</div>
-    <p>יודע לאלתר רגעים מצחיקים מול המצלמה עם עובדים שהגיעו לאירוע. זה מה שמפריד בין תיעוד לבין תוכן ויראלי.</p>
+    האירוע ממשיך&#8230; וצוות העריכה של <b>BOLD</b> עובד במקביל ומייצר <b>סרטון</b> מקצועי, קצבי ומלא אנרגיה. תוך <b>פחות משעה</b> הסרטון מוכן להקרנה ויוצג על המסך המרכזי מול המשתתפים באירוע.
   </div>
 </section>
 
@@ -330,20 +286,21 @@ h2{
       <div class="num">01</div>
       <div class="t">קבלת פנים</div>
       <h3>עמדת צילום בכניסה</h3>
-      <p>ארז מקבל את העובדים בכניסה לאירוע ומראיין אותם קצר, בקצב של האירוע, בלי להפריע למהלך האירוע עצמו.</p>
+      <p>ארז מקבל את העובדים בכניסה לאירוע ומראיין אותם בקצרה, מבלי למשוך תשומת לב ומבלי להפריע לאירוע עצמו.</p>
       <ul>
         <li>עמדת צילום בכניסה</li>
         <li>ראיונות קצרים</li>
         <li>שאלות מפתיעות</li>
         <li>פאנצ&#39;ים והומור</li>
         <li>תגובות ספונטניות</li>
+        <li>אותנטיות</li>
       </ul>
     </div>
     <div class="step">
       <div class="num">02</div>
       <div class="t">עריכה בזמן אמת</div>
       <h3>העורך עובד בזמן שהאירוע מתחיל</h3>
-      <p>ברגע שהאורחים נכנסים לאולם, החומר כבר על שולחן העריכה. אין המתנה, אין העברת קבצים למחרת.</p>
+      <p>בשנייה שהראיונות נגמרים וברגע שהאורחים נכנסים לאולם, החומר מונח על שולחן העריכה והעורך כבר עובד&#8230;</p>
       <ul>
         <li>בחירת הרגעים הטובים</li>
         <li>עריכה מקצועית</li>
@@ -357,38 +314,22 @@ h2{
       <div class="num">03</div>
       <div class="t">ההקרנה</div>
       <h3>על המסך המרכזי, לפני שהערב נגמר</h3>
-      <p>לקראת סוף האירוע מוקרן סרטון מסכם שצולם ונערך כולו במהלך אותו ערב. הקהל רואה את עצמו על המסך, מגיב, צוחק ומוחא כפיים.</p>
+      <p>לקראת סוף האירוע מוקרן סרטון מסכם שצולם ונערך כולו במהלך אותו ערב. הקהל רואה את עצמו על המסך, מגיב, צוחק ומרגיש שייכות וחיבור לאירוע.</p>
     </div>
   </div>
-</section>
-
-<!-- ═══ EXAMPLE ═══ -->
-<section class="demo">
-  <div class="eyebrow">דוגמה</div>
-  <h2>ככה זה נראה על המסך</h2>
-  <p>סרטון שצולם בקבלת הפנים, נערך במהלך האירוע והוקרן באותו ערב.</p>
-  <button class="card" data-yt="MMda_g_-Zq0" aria-label="נגן את סרטון הדוגמה">
-    <img src="https://i.ytimg.com/vi/MMda_g_-Zq0/maxresdefault.jpg" alt="פריים מתוך סרטון הדוגמה של BOLD 60&#8242;">
-    <span class="play" aria-hidden="true"></span>
-    <span class="cap"><bdi>BOLD 60&#8242;</bdi> · סרטון קבלת פנים &#8212; צולם, נערך והוקרן באותו ערב</span>
-  </button>
 </section>
 
 <!-- ═══ DELIVERABLES ═══ -->
 <section class="deliver">
   <div class="eyebrow">מה הלקוח מקבל</div>
-  <h2>נכס דיגיטלי מוכן להפצה &#8212; באותו ערב</h2>
+  <h2>נכס דיגיטלי מוכן להפצה &#8212; באותו הערב</h2>
   <ul>
-    <li><b>סרטון Highlight מקצועי</b> של קבלת הפנים</li>
-    <li>מוכן <b>כבר במהלך האירוע</b></li>
-    <li>הקרנה על המסכים באירוע</li>
-    <li>קובץ מוכן להפצה מיד בסיום</li>
-    <li>מתאים ל<b>וואטסאפ</b></li>
-    <li>מתאים ל<b>אינסטגרם</b></li>
-    <li>מתאים ל<b>לינקדאין</b></li>
-    <li>מתאים ל<b>פייסבוק</b></li>
+    <li><i>🎬</i><span><b>סרטון Highlight מקצועי</b> של קבלת הפנים</span></li>
+    <li><i>⏱️</i><span>מוכן <b>כבר במהלך האירוע</b></span></li>
+    <li><i>📺</i><span>הקרנה על המסכים באירוע</span></li>
+    <li><i>📱</i><span>קובץ מוכן להפצה מיד בסיום, שמתאים ל<b>כל רשת חברתית</b></span></li>
   </ul>
-  <p class="note">מחלקת <b>משאבי אנוש</b> יכולה להפיץ את הסרטון עוד באותו ערב &#8212; בזמן שהעובדים עדיין באירוע, ועדיין מדברים עליו.</p>
+  <p class="note">מחלקת <b>משאבי אנוש</b> יכולה להפיץ את הסרטון עוד באותו הערב, בזמן שהעובדים עדיין באירוע ועדיין מדברים עליו.</p>
 </section>
 
 <!-- ═══ BENEFITS ═══ -->
@@ -416,65 +357,20 @@ h2{
     </div>
     <div class="cell b5">
       <h3>אפקט ה&#8221;וואו&#8221;</h3>
-      <p>בזמן שכולם מצפים לקבל סרטון שבוע אחרי האירוע &#8212; הם כבר רואים אותו על המסך, לפני שהאירוע הסתיים.</p>
+      <p>בזמן שכולם מצפים לקבל סרטון שבוע אחרי האירוע &#8212; הם כבר רואים אותו על המסך, עוד לפני שהאירוע הסתיים.</p>
     </div>
   </div>
 </section>
 
 <!-- ═══ UNIQUE ═══ -->
 <section class="unique">
-  <div class="eyebrow cool">למה זה מוצר ייחודי</div>
-  <h2>כי הוא משלב שלושה עולמות יחד</h2>
-  <div class="triple">
-    <div class="tri"><b>מנחה מקצועי</b><span>שיודע לייצר רגעים מצחיקים מול מצלמה, בלי תסריט</span></div>
-    <div class="tri"><b>הפקת תוכן בזמן אמת</b><span>צוות שעובד בתוך האירוע, לא אחריו</span></div>
-    <div class="tri"><b>עריכה ברמת Broadcast</b><span>מהירה &#8212; ובלי להתפשר על האיכות</span></div>
-  </div>
   <div class="punch">
-    התוצאה היא מוצר שאינו רק <b>תיעוד של האירוע</b>,<br>אלא <b class="hi">חוויה שמתרחשת בתוך האירוע עצמו</b>.
+    התוצאה היא מוצר שאינו רק תיעוד של <b>האירוע</b>,<br>אלא <b class="hi">חוויה</b> שמתרחשת בתוך האירוע עצמו.
   </div>
 </section>
 
-<!-- ═══ CTA ═══ -->
-<section class="cta">
-  <div class="eyebrow">הצעד הבא</div>
-  <h2>ספרו לנו על האירוע הקרוב שלכם</h2>
-  <p>תאריך, כמות משתתפים, אולם &#8212; ונחזור אליכם עם הצעה מותאמת.</p>
-  <div class="lines">
-    <a href="https://boldproduction.net" target="_blank" rel="noopener">boldproduction.net</a>
-  </div>
-</section>
-
-<div class="sig">B<b>O</b>LD 60&#8242; · CONTENT PRODUCTION HOUSE</div>
+<div class="sig">B<b>O</b>LD &#8242;60 · CONTENT PRODUCTION HOUSE</div>
 </div>
 
-<!-- LIGHTBOX -->
-<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="נגן וידאו">
-  <button class="x" id="lbx" aria-label="סגור">&#215;</button>
-  <div class="frame" id="lbf"></div>
-</div>
-
-<script>
-(function(){
-  var lb=document.getElementById('lb'),lbf=document.getElementById('lbf'),last=null;
-  function open(id,btn){
-    last=btn;
-    lbf.innerHTML='<iframe src="https://www.youtube.com/embed/'+id+'?autoplay=1&rel=0" '+
-      'title="סרטון דוגמה" allow="accelerometer;autoplay;encrypted-media;picture-in-picture" allowfullscreen></iframe>';
-    lb.classList.add('on');document.body.style.overflow='hidden';
-    document.getElementById('lbx').focus();
-  }
-  function close(){
-    lb.classList.remove('on');lbf.innerHTML='';document.body.style.overflow='';
-    if(last)last.focus();
-  }
-  document.querySelectorAll('[data-yt]').forEach(function(b){
-    b.addEventListener('click',function(){open(b.dataset.yt,b)});
-  });
-  document.getElementById('lbx').addEventListener('click',close);
-  lb.addEventListener('click',function(e){if(e.target===lb)close()});
-  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&lb.classList.contains('on'))close()});
-})();
-</script>
 </body>
 </html>
