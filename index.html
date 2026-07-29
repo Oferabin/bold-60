@@ -189,11 +189,20 @@ h2{
 .punch b{color:var(--white);font-weight:700}
 .punch b.hi{color:var(--orange)}
 
-/* המשפט הסוגר הוא הסקשן האחרון — החתימה מקבלת אוויר משלה מעליה. */
+/* המשפט הסוגר הוא הסקשן האחרון — החתימה מקבלת אוויר משלה מעליה.
+   הכתובת יושבת מעל שורת החתימה: היא הדבר היחיד במסמך שאפשר ללחוץ עליו,
+   ולכן היא מקבלת גודל וצבע ולא מתחפשת לקרדיט. */
 .sig{
-  padding:34px 54px 54px;font-family:'Rubik';font-size:.72rem;font-weight:700;
-  letter-spacing:.2em;color:var(--grey-2);
+  padding:34px 54px 54px;font-family:'Rubik';
+  display:flex;flex-direction:column;align-items:flex-start;gap:18px;
 }
+.sig a{
+  color:var(--white);text-decoration:none;font-weight:600;font-size:1.15rem;
+  letter-spacing:-.02em;padding-bottom:6px;
+  border-bottom:1px solid rgba(249,115,22,.45);transition:.25s;
+}
+.sig a:hover,.sig a:focus-visible{color:var(--orange);border-color:var(--orange)}
+.sig span{font-size:.72rem;font-weight:700;letter-spacing:.2em;color:var(--grey-2)}
 .sig b{color:var(--orange)}
 
 /* ══ טאבלט ומטה ══ */
@@ -239,7 +248,9 @@ h2{
   .punch br{display:none}
 
   .mark{font-size:1.3rem}
-  .sig{padding:26px 20px 40px;font-size:.66rem;letter-spacing:.16em}
+  .sig{padding:26px 20px 40px;gap:15px}
+  .sig a{font-size:1.05rem}
+  .sig span{font-size:.66rem;letter-spacing:.16em}
 }
 
 /* ══ מסך מגע ══ אין hover אמיתי; בלי זה אפקט הריחוף "נתקע" אחרי נגיעה. */
@@ -369,7 +380,10 @@ h2{
   </div>
 </section>
 
-<div class="sig">B<b>O</b>LD &#8242;60 · CONTENT PRODUCTION HOUSE</div>
+<footer class="sig">
+  <a href="https://boldproduction.net" target="_blank" rel="noopener">boldproduction.net</a>
+  <span>B<b>O</b>LD &#8242;60 · CONTENT PRODUCTION HOUSE</span>
+</footer>
 </div>
 
 </body>
